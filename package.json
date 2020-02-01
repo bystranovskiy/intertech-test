@@ -1,0 +1,43 @@
+{
+  "name": "intertech",
+  "version": "1.0.0",
+  "description": "Frontend-test | Intertech",
+  "main": "src/js/entry.es6",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "es6-promise-promise": "^1.0.0",
+    "eslint": "^5.12.0",
+    "eslint-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.2.0",
+    "legacy-loader": "0.0.2",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.9",
+    "resolve-url-loader": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "dev": "webpack",
+    "build": "set NODE_ENV=production&&webpack"
+  },
+  "keywords": [
+    "Intertech company"
+  ],
+  "author": "bystranovskiy",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.41.2"
+  }
+}
