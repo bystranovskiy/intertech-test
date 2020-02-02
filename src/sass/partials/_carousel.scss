@@ -1,5 +1,5 @@
 .section-carousel {
-  padding: 70px 0;
+  padding: 70px 0 20px;
   @media(max-width: $mobile-breakpoint - 1px) {
     max-width: 100%;
     overflow-x: hidden;
@@ -79,7 +79,7 @@
 .carousel-item {
   padding: 20px;
 
-  @media($mobile-breakpoint - 1px) {
+  @media(max-width: $mobile-breakpoint - 1px) {
     padding: 20px 8px;
   }
 

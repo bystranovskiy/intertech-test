@@ -4,7 +4,7 @@
 
         const _this = $(this);
 
-        $(this).on("init breakpoint", function (event, slick) {
+        $(this).on("init breakpoint", function () {
 
             const $slick_dots = $(this).find(".slick-dots");
             const $slick_prev = $(this).find(".slick-prev");
@@ -14,12 +14,16 @@
 
             $(this).find(".slick-nav").prepend($slick_prev).append($slick_next);
 
+        }).on("init afterChange", function () {
+            $(this).find(".lazy").Lazy({
+                imageBase: "assets/img/",
+            });
         }).slick({
             dots: true,
             slidesPerRow: 3,
             rows: 2,
-            //autoplay: true,
-            //autoplaySpeed: 3000,
+            autoplay: true,
+            autoplaySpeed: 5000,
             prevArrow: "<span class='slick-prev'><i class='icon-angle-left'></i></span>",
             nextArrow: "<span class='slick-next'><i class='icon-angle-right'></i></span>",
             responsive: [
@@ -40,6 +44,6 @@
             ]
         });
 
-    }); // document.ready
+    });
 
 })(jQuery);
