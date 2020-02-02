@@ -2,8 +2,6 @@
 
     $(".carousel-container").each(function () {
 
-        const _this = $(this);
-
         $(this).on("init breakpoint", function () {
 
             const $slick_dots = $(this).find(".slick-dots");
