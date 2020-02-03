@@ -3,7 +3,10 @@
     $(".carousel-container").each(function () {
 
         const autoplay = $(this).data("autoplay") ? true : false;
+        const infinite = $(this).data("infinite") ? true : false;
         const rows = $(this).data("rows") ? $(this).data("rows") : 2;
+        const slidesPerRow = $(this).data("per-row") ? $(this).data("per-row") : 3;
+
 
         $(this).on("init breakpoint", function () {
 
@@ -21,10 +24,10 @@
             });
         }).slick({
             dots: true,
-            slidesPerRow: 3,
+            slidesPerRow: slidesPerRow,
             rows: rows,
             autoplay: autoplay,
-            infinite: autoplay,
+            infinite: infinite,
             autoplaySpeed: 5000,
             prevArrow: "<span class=\"slick-prev\"><i class=\"icon-angle-left\"></i></span>",
             nextArrow: "<span class=\"slick-next\"><i class=\"icon-angle-right\"></i></span>",

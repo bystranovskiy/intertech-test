@@ -100,11 +100,16 @@
 
   .block-title {
     position: absolute;
-    bottom: 27px;
-    left: 23px;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    padding:0 23px 27px;
   }
 
 }
+
+
 
 .carousel-item-inner {
   display: block;
